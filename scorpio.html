@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpion (2.007) | Thomas Larsen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <nav class="p-8 flex justify-between items-center fixed w-full bg-white/90 backdrop-blur-sm z-50">
+        <a href="index.html" class="text-xl font-medium">Thomas Larsen</a>
+        <div class="space-x-8">
+            <a href="portfolio.html" class="text-gray-400 hover:text-black transition-colors">&larr; Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <article class="pt-40 max-w-4xl mx-auto px-6">
+        <!-- Hero Section -->
+        <header data-aos="fade-up">
+            <h1 class="text-5xl font-bold tracking-tighter mb-4">Scorpion (2.007)</h1>
+            <p class="text-xl text-gray-500 font-light mb-12">Sophomore Capstone — Design and Manufacturing I</p>
+            <img src="https://images.squarespace-cdn.com/content/v1/6508858363f3bf54add43855/5d7bd222-3f27-45d6-921c-8006563e9f73/Warren.jpg" 
+                 class="w-full h-auto mb-20 shadow-lg">
+        </header>
+
+        <!-- Problem Statement Section -->
+        <section class="mb-24" data-aos="fade-up">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-6">01. Problem Statement</h2>
+            <p class="text-2xl leading-relaxed font-light text-gray-800 italic border-l-4 border-gray-100 pl-8">
+                "Design a robot to interact with the Gooble Box, a 2x2 button panel on a 25° incline. The robot must apply 20N to top buttons and 10N to the bottom..."
+            </p>
+        </section>
+
+        <!-- Tech Details Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+            <div data-aos="fade-right">
+                <h3 class="text-xl font-bold mb-4 underline decoration-blue-500 underline-offset-8">MCM: Camshaft Design</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Developed a custom camshaft mechanism to convert rotational motor motion into high-frequency linear button presses.
+                </p>
+            </div>
+            <div data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-4 underline decoration-blue-500 underline-offset-8">Chassis & Drivetrain</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Utilized a narrow wheelbase and tank treads to navigate the incline while maintaining constant contact with the Gooble Box track.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="border-t py-20 flex justify-between items-center" data-aos="fade-up">
+            <a href="portfolio.html" class="group">
+                <span class="text-gray-400 block text-xs uppercase tracking-widest mb-2">Previous</span>
+                <span class="text-xl font-medium group-hover:underline underline-offset-4">Back to Gallery</span>
+            </a>
+            <div class="text-right">
+                <span class="text-gray-400 block text-xs uppercase tracking-widest mb-2">Next Project</span>
+                <span class="text-xl font-medium text-gray-300">Biomech Actuator &rarr;</span>
+            </div>
+        </footer>
+    </article>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

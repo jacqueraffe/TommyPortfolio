@@ -1,24 +1,51 @@
-<!-- Replace Hero section in portfolio.html with this -->
-<section class="max-w-6xl mx-auto pt-40 px-6">
-    <h1 class="text-4xl font-bold mb-12" data-aos="fade-right">Portfolio</h1>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Project 1 -->
-        <div class="portfolio-card" data-aos="fade-up">
-            <div class="bg-gray-100 aspect-video mb-4 flex items-center justify-center">
-                <span class="text-gray-400">[Project Image]</span>
-            </div>
-            <h3 class="text-xl font-bold">Scorpion (2.007)</h3>
-            <p class="text-gray-500">Autonomous robotics competition at MIT.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Thomas Larsen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Navbar (Same as index.html) -->
+    <nav class="p-8 flex justify-between items-center fixed w-full bg-white/90 backdrop-blur-sm z-50">
+        <a href="index.html" class="text-xl font-medium tracking-tight">Thomas Larsen</a>
+        <div class="space-x-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+            <a href="resume.html" class="nav-link">Resume</a>
         </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-6 max-w-7xl mx-auto">
+        <h1 class="text-sm font-bold uppercase tracking-[0.3em] text-gray-400 mb-12" data-aos="fade-up">Portfolio</h1>
         
-        <!-- Project 2 -->
-        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-gray-100 aspect-video mb-4 flex items-center justify-center">
-                <span class="text-gray-400">[Project Image]</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+            <!-- Scorpion Project Card -->
+            <a href="scorpion.html" class="group block cursor-pointer" data-aos="fade-up">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/3] mb-4">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6508858363f3bf54add43855/5d7bd222-3f27-45d6-921c-8006563e9f73/Warren.jpg" 
+                         alt="Scorpion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[0.2] group-hover:grayscale-0">
+                </div>
+                <h2 class="text-2xl font-bold tracking-tight">Scorpion (2.007)</h2>
+                <p class="text-gray-500 font-light mt-1">Sophomore Capstone: Mechanical Design & Manufacturing</p>
+            </a>
+
+            <!-- Other Project Card (Placeholder) -->
+            <div class="group block opacity-60 grayscale" data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/3] mb-4">
+                    <div class="w-full h-full flex items-center justify-center text-gray-400">Biomech Actuator</div>
+                </div>
+                <h2 class="text-2xl font-bold tracking-tight">Biomech Actuator</h2>
+                <p class="text-gray-500 font-light mt-1">Soft robotics research</p>
             </div>
-            <h3 class="text-xl font-bold">Biomech Actuator</h3>
-            <p class="text-gray-500">Soft robotics research and development.</p>
         </div>
-    </div>
-</section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
