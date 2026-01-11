@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    font-weight: 400;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+/* Smooth Page Entrance */
+body {
+    animation: fadeInPage 0.8s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Portfolio Grid Hover Effect */
+.portfolio-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+
+.portfolio-card img {
+    transition: all 0.6s ease;
+    filter: grayscale(0.2);
+}
