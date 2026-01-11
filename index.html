@@ -4,49 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Larsen | Mechanical Engineering</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-900 font-sans antialiased">
+<body>
 
-    <!-- Navigation -->
-    <nav class="p-8 flex justify-between items-center fixed w-full bg-white/80 backdrop-blur-md z-50">
-        <a href="index.html" class="text-xl font-medium tracking-tight">Thomas Larsen</a>
-        <div class="space-x-8">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="resume.html" class="nav-link">Resume</a>
-        </div>
-    </nav>
+    <header>
+        <a href="index.html" class="logo">Thomas Larsen</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <main class="min-h-screen flex flex-col justify-center items-center pt-20 px-6">
-        <div data-aos="fade-up" data-aos-duration="1000" class="text-center max-w-2xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">Thomas Larsen</h1>
-            <p class="text-xl text-gray-500 mb-8 font-light tracking-wide uppercase">Mechanical Engineering</p>
+    <main>
+        <section class="hero">
+            <h1>Thomas Larsen</h1>
+            <h2>Mechanical Engineering</h2>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-grid">
+            <!-- Project 1 -->
+            <a href="portfolio/bio-inspired-robotics.html" class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-info">
+                    <div class="project-title">Bio-Inspired Robotics</div>
+                    <div class="project-category">Research</div>
+                </div>
+            </a>
             
-            <div class="mt-12 text-left space-y-6 text-lg leading-relaxed text-gray-700">
-                <p>Thanks for taking the time to visit my web portfolio. If there's anything you'd like to know about any of the projects showcased here or if you're interested in collaborating, please shoot me an email!</p>
-            </div>
+            <!-- Project 2 -->
+            <a href="portfolio/precision-machine-design.html" class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-info">
+                    <div class="project-title">Precision Machine Design</div>
+                    <div class="project-category">Engineering</div>
+                </div>
+            </a>
 
-            <!-- Contact Form Placeholder -->
-            <div class="mt-16 text-left border-t pt-8">
-                <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Get in touch</h2>
-                <a href="mailto:your-email@example.com" class="text-2xl hover:text-blue-600 transition-colors border-b-2 border-black pb-1">
-                    Email me &rarr;
-                </a>
-            </div>
-        </div>
+            <!-- Project 3 -->
+            <a href="portfolio/mit-live.html" class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-info">
+                    <div class="project-title">MIT LIVE</div>
+                    <div class="project-category">Co-Founder</div>
+                </div>
+            </a>
+            
+            <!-- Add more project cards here as needed -->
+        </section>
     </main>
 
-    <footer class="p-12 text-center text-sm text-gray-400">
-        Thomas Larsen, 2024
+    <section class="contact-section">
+        <h2>Get in touch.</h2>
+        <p>Thanks for taking the time to visit my web portfolio. If there's anything you'd like to know about any of the projects showcased here or if you're interested in collaborating, please shoot me an email!</p>
+        <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
+    </section>
+
+    <footer>
+        &copy; 2024 Thomas Larsen
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true });
-    </script>
 </body>
 </html>
