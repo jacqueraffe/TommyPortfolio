@@ -7,49 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <a href="index.html" class="logo">Thomas Larsen</a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="resume-container">
-        <section class="resume-section">
-            <h3>Who I Am</h3>
-            <p>Hey! My name is Thomas Larsen and I am a Mechanical Engineer (Course 2) at MIT, with a minor in Computer Science (Course 6). I have a passion for precision machine design and bio-inspired robotics.</p>
-            <br>
-            <p>I play Alto Saxophone and love jazz-fusion & indie-rock. I am also a co-founder of MIT LIVE, a dynamic music group on campus.</p>
-        </section>
+    <main class="resume-container fade-in">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h1>Resume</h1>
+        </div>
 
+        <!-- Education -->
         <section class="resume-section">
-            <h3>Education</h3>
-            <div class="resume-item">
-                <h4>Massachusetts Institute of Technology (MIT)</h4>
-                <span class="resume-date">Expected 2024</span>
-                <p>Bachelor of Science in Mechanical Engineering<br>Minor in Computer Science</p>
+            <div class="resume-label">Education</div>
+            <div class="resume-content">
+                <div style="margin-bottom: 30px;">
+                    <h4>Massachusetts Institute of Technology (MIT)</h4>
+                    <span class="resume-date">Expected May 2024</span>
+                    <p>Bachelor of Science in Mechanical Engineering<br>Minor in Computer Science</p>
+                </div>
             </div>
         </section>
 
+        <!-- Experience -->
         <section class="resume-section">
-            <h3>Experience</h3>
-            <div class="resume-item">
-                <h4>Mechanical Engineering Intern</h4>
-                <span class="resume-date">Summer 2023</span>
-                <p>Description of role and achievements...</p>
+            <div class="resume-label">Experience</div>
+            <div class="resume-content">
+                <div style="margin-bottom: 30px;">
+                    <h4>Formlabs</h4>
+                    <span class="resume-date">Summer 2023 | Somerville, MA</span>
+                    <p>Mechanical Engineering Intern. Worked on next-generation SLA printing hardware. Designed and validated thermal subsystems.</p>
+                </div>
+                
+                <div style="margin-bottom: 30px;">
+                    <h4>MIT Biomimetic Robotics Lab</h4>
+                    <span class="resume-date">2022 - Present | Cambridge, MA</span>
+                    <p>Undergraduate Researcher. Developed high-torque actuation units for the Mini-Cheetah robot. Focused on power density and thermal management.</p>
+                </div>
             </div>
-            <!-- Add more items -->
+        </section>
+
+        <!-- Skills -->
+        <section class="resume-section">
+            <div class="resume-label">Skills</div>
+            <div class="resume-content">
+                <p><strong>Fabrication:</strong> Lathe, Mill, CNC, 3D Printing, Laser Cutting</p>
+                <p><strong>Software:</strong> SolidWorks, Fusion 360, Python, MATLAB, C++, Arduino</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        &copy; 2024 Thomas Larsen
-    </footer>
-
+    <footer>Thomas Larsen &copy; 2024</footer>
 </body>
 </html>
