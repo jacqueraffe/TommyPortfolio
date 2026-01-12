@@ -542,7 +542,7 @@ textarea.form-input {
 }
 
 .gallery-cell {
-  width: 66%;
+  width: 66% !important;
   height: 600px;
   margin-right: 10px;
   background: transparent;

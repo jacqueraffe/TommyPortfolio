@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Flickity CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
                 </div>
 
                 <!-- Flickity Carousel -->
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "imagesLoaded": true }'>
+                <div class="gallery main-carousel">
                     <div class="gallery-cell">
                         <img src="../images/scorpion-carousel-back-iso.jpg" alt="Back Isometric">
                         <div class="carousel-caption">Back Isometric</div>
@@ -331,8 +331,17 @@
     </footer>
 
     <!-- Flickity JS -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
     <script>
+        // Manual Init
+        const elem = document.querySelector('.main-carousel');
+        const flkty = new Flickity( elem, {
+          // options
+          wrapAround: true,
+          imagesLoaded: true,
+          percentPosition: false // Use pixels if percent fails
+        });
+
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
