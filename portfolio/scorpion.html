@@ -333,25 +333,36 @@
                 </div>
 
                 <!-- Acknowledgements -->
-                <div class="project-grid">
-                    <div class="project-media">
-                         <img src="../images/scorpion-team.jpg" alt="Team Photo" style="margin-bottom: 1rem; border-radius: 4px;">
-                         <img src="../images/scorpion-fun-photo.png" alt="Fun Photo" style="border-radius: 4px;">
+                <div class="project-grid acknowledgements-section">
+                    <div class="project-media overlapping-images">
+                         <!-- Images stacked/overlapped via CSS -->
+                         <div class="image-stack">
+                             <img src="../images/scorpion-team.jpg" alt="Team Photo" class="stack-back">
+                             <img src="../images/scorpion-fun-photo.png" alt="Fun Photo" class="stack-front">
+                         </div>
                     </div>
                     <div class="project-text">
                         <h1>Acknowledgements</h1>
                         
-                        <h3>Professor Seering</h3>
-                        <p>I want to give a huge shout-out to my advisor, Professor Warren Seering. Your support was invaluable throughout the semester, and you have made a tremendous difference in my life and my confidence as a mechanical engineer. Thank you for inspiring me every step of the way and always being there to talk to. You are amazing.</p>
+                        <details class="accordion-item">
+                            <summary>Professor Seering</summary>
+                            <p>I want to give a huge shout-out to my advisor, Professor Warren Seering. Your support was invaluable throughout the semester, and you have made a tremendous difference in my life and my confidence as a mechanical engineer. Thank you for inspiring me every step of the way and always being there to talk to. You are amazing.</p>
+                        </details>
                         
-                        <h3>Pappalardo Shop staff</h3>
-                        <p>Thank you to all of the wonderful machine shop staff who worked all hours of the day, especially towards competition season. I want to personally thank Scott for his amazing tips and horrible puns that carried me throughout the semester.</p>
+                        <details class="accordion-item">
+                            <summary>Pappalardo Shop staff</summary>
+                            <p>Thank you to all of the wonderful machine shop staff who worked all hours of the day, especially towards competition season. I want to personally thank Scott for his amazing tips and horrible puns that carried me throughout the semester.</p>
+                        </details>
                         
-                        <h3>Course Reflections</h3>
-                        <p>In retrospect, I now understand how long assembly and manufacturing take, so my ambitious plans for developing a new MCM every week seem impractical. Perfection is the enemy of progress; I should have experimented more frequently by designing and manufacturing many physical prototypes. I discarded many ideas early on due to a poor understanding and preconceived notions about how components functioned. I have learned to be more experimental and more realistic when planning tasks. I could also have developed a better strategy to gain more points, possibly by experimenting with other modules rather than doing a depth-first search of the gooble boxes.</p>
+                        <details class="accordion-item">
+                            <summary>Course Reflections</summary>
+                            <p>In retrospect, I now understand how long assembly and manufacturing take, so my ambitious plans for developing a new MCM every week seem impractical. Perfection is the enemy of progress; I should have experimented more frequently by designing and manufacturing many physical prototypes. I discarded many ideas early on due to a poor understanding and preconceived notions about how components functioned. I have learned to be more experimental and more realistic when planning tasks. I could also have developed a better strategy to gain more points, possibly by experimenting with other modules rather than doing a depth-first search of the gooble boxes.</p>
+                        </details>
                         
-                        <h3>Design Notebook</h3>
-                        <p>Check it out <a href="#" style="color: var(--color-orange); font-weight: bold;">here</a>!</p>
+                        <details class="accordion-item">
+                            <summary>Design Notebook</summary>
+                            <p>Check it out <a href="#" style="color: var(--color-orange); font-weight: bold;">here</a>!</p>
+                        </details>
                     </div>
                 </div>
 

@@ -406,10 +406,39 @@ textarea.form-input {
    Portfolio Grid
    ============================================ */
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.portfolio-grid.reverse {
+  flex-direction: row-reverse;
+}
+
+.portfolio-media, .portfolio-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .portfolio-grid.reverse {
+    flex-direction: column; /* Or column-reverse if you want image first always? Usually text first on mobile is better for context, or image first for visual? Let's stick to natural order or forced order. */
+    /* Let's try natural stacking order for now, which means resetting row-reverse */
+  }
+  
+  .portfolio-media, .portfolio-text {
+    width: 100%;
+  }
+  
+  .portfolio-media img {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
 }
 
 .portfolio-item {
@@ -489,27 +518,6 @@ textarea.form-input {
 
 .project-media, .project-text {
   flex: 1;
-}
-
-@media (max-width: 768px) {
-  .project-grid {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-  
-  .project-grid.reverse {
-    flex-direction: column; /* Or column-reverse if you want image first always? Usually text first on mobile is better for context, or image first for visual? Let's stick to natural order or forced order. */
-    /* Let's try natural stacking order for now, which means resetting row-reverse */
-  }
-  
-  .project-media, .project-text {
-    width: 100%;
-  }
-  
-  .project-media img {
-    width: 100%;
-    margin-bottom: var(--spacing-sm);
-  }
 }
 
 .project-grid-media {
@@ -878,4 +886,106 @@ textarea.form-input {
   text-align: center;
   font-family: monospace;
   min-height: 200px;
+}
+
+/* ============================================
+   Acknowledgements Section Styles
+   ============================================ */
+
+/* Overlapping Images */
+.image-stack {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Aspect ratio container */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.image-stack img {
+  position: absolute;
+  width: 70%; /* Adjust size relative to container */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, z-index 0s;
+}
+
+.stack-back {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-3deg);
+}
+
+.stack-front {
+  bottom: 10%;
+  right: 0;
+  z-index: 2;
+  transform: rotate(2deg);
+}
+
+.image-stack:hover .stack-back {
+  z-index: 3;
+  transform: scale(1.05) rotate(0deg);
+}
+
+.image-stack:hover .stack-front {
+  transform: scale(0.95) rotate(0deg);
+}
+
+
+/* Accordion / Details */
+.accordion-item {
+  border-bottom: 1px solid var(--color-light-grey);
+  margin-bottom: 1rem;
+}
+
+.accordion-item summary {
+  padding: 1rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  cursor: pointer;
+  list-style: none; /* Remove default triangle */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-dark);
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-orange);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.accordion-item[open] summary {
+  color: var(--color-orange);
+}
+
+.accordion-item p {
+  padding-bottom: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
