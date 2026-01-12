@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -36,8 +38,6 @@
             </div>
         </section>
 
-        <!-- Project Nav Removed as requested -->
-
         <section class="section">
             <div class="project-content">
 
@@ -48,48 +48,44 @@
                     <p>Scorpion: Overview</p>
                 </div>
 
-                <!-- Carousel -->
-                <div class="carousel" id="overviewCarousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-back-iso.jpg" alt="Back Isometric">
-                            <div class="carousel-caption">Back Isometric</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-front-iso.jpg" alt="Front Isometric">
-                            <div class="carousel-caption">Front Isometric</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-treads.jpg" alt="Treads: Detail View">
-                            <div class="carousel-caption">Treads: Detail View</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-camshaft.jpg" alt="Camshaft: Detail View">
-                            <div class="carousel-caption">Camshaft: Detail View</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-right-retracted.jpg" alt="Right View (Stinger Retracted)">
-                            <div class="carousel-caption">Right View (Stinger Retracted)</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-right-extended.jpg" alt="Right View (Stinger Extended)">
-                            <div class="carousel-caption">Right View (Stinger Extended)</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-front.jpg" alt="Front View">
-                            <div class="carousel-caption">Front View</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-back.jpg" alt="Back View">
-                            <div class="carousel-caption">Back View</div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/scorpion-carousel-bottom.jpg" alt="Bottom View: Electronics Panel">
-                            <div class="carousel-caption">Bottom View: Electronics Panel</div>
-                        </div>
+                <!-- Flickity Carousel -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "imagesLoaded": true }'>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-back-iso.jpg" alt="Back Isometric">
+                        <div class="carousel-caption">Back Isometric</div>
                     </div>
-                    <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
-                    <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-front-iso.jpg" alt="Front Isometric">
+                        <div class="carousel-caption">Front Isometric</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-treads.jpg" alt="Treads: Detail View">
+                        <div class="carousel-caption">Treads: Detail View</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-camshaft.jpg" alt="Camshaft: Detail View">
+                        <div class="carousel-caption">Camshaft: Detail View</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-right-retracted.jpg" alt="Right View (Stinger Retracted)">
+                        <div class="carousel-caption">Right View (Stinger Retracted)</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-right-extended.jpg" alt="Right View (Stinger Extended)">
+                        <div class="carousel-caption">Right View (Stinger Extended)</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-front.jpg" alt="Front View">
+                        <div class="carousel-caption">Front View</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-back.jpg" alt="Back View">
+                        <div class="carousel-caption">Back View</div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../images/scorpion-carousel-bottom.jpg" alt="Bottom View: Electronics Panel">
+                        <div class="carousel-caption">Bottom View: Electronics Panel</div>
+                    </div>
                 </div>
 
                 <!-- Starting Out Simple -->
@@ -334,37 +330,9 @@
         <p class="footer-text">Thomas Larsen, 2024</p>
     </footer>
 
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-        // Carousel Logic
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-item');
-        const inner = document.querySelector('.carousel-inner');
-        
-        // Match the CSS min-width percentage
-        const slideWidthPercent = 60; 
-
-        function showSlides() {
-            // Check bounds
-            // We want to stop when the last image is fully visible on the right.
-            // But a simple loop is easier for now.
-            if (slideIndex >= slides.length) { slideIndex = 0 }
-            if (slideIndex < 0) { slideIndex = slides.length - 1 }
-            
-            // Slide transition
-            // Move by slideIndex * slideWidthPercent
-            inner.style.transform = `translateX(-${slideIndex * slideWidthPercent}%)`;
-        }
-
-        function moveCarousel(n) {
-            slideIndex += n;
-            showSlides();
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-             showSlides();
-        });
-
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
