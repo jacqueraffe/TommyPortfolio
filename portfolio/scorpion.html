@@ -44,37 +44,39 @@
         <section class="section">
             <div class="project-content">
 
-                <!-- Overview Section with Carousel -->
+                <!-- Overview Section -->
                 <div class="project-header">
-                    <h2>Scorpion: Overview</h2>
-                    <p>Before designing a robot to approach the main task, I built a testing platform to familiarize myself with the scale of the board, the machine shop, and the available components.</p>
+                    <h2>2.007 Design and Manufacturing I</h2>
+                    <h4>SCORPION - Sophomore Capstone</h4>
+                    <p>Scorpion: Overview</p>
                 </div>
 
+                <!-- Carousel -->
                 <div class="carousel" id="overviewCarousel">
                     <div class="carousel-inner">
                         <div class="carousel-item">
-                            <img src="../images/scorpion-iso.png" alt="Full Isometric View">
-                            <div class="carousel-caption">Full Isometric View</div>
+                            <img src="../images/scorpion-iso.png" alt="Back Isometric">
+                            <div class="carousel-caption">Back Isometric</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-claw-iso.jpg" alt="Claw Mechanism Isometric">
-                            <div class="carousel-caption">Claw Mechanism Isometric</div>
+                            <img src="../images/scorpion-claw-iso.jpg" alt="Front Isometric">
+                            <div class="carousel-caption">Front Isometric</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-detail-1.jpg" alt="Detail View: Chassis">
-                            <div class="carousel-caption">Detail View: Chassis</div>
+                            <img src="../images/scorpion-detail-1.jpg" alt="Treads: Detail View">
+                            <div class="carousel-caption">Treads: Detail View</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-detail-2.jpg" alt="Detail View: Treads">
-                            <div class="carousel-caption">Detail View: Treads</div>
+                            <img src="../images/scorpion-detail-2.jpg" alt="Camshaft: Detail View">
+                            <div class="carousel-caption">Camshaft: Detail View</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-claw.gif" alt="Claw Mechanism Animation">
-                            <div class="carousel-caption">Claw Mechanism Animation</div>
+                            <img src="../images/scorpion-claw.gif" alt="Right View (Stinger Retracted)">
+                            <div class="carousel-caption">Right View (Stinger Retracted)</div>
                         </div>
                          <div class="carousel-item">
-                            <img src="../images/scorpion-assembly.gif" alt="Full Assembly Animation">
-                            <div class="carousel-caption">Full Assembly Animation</div>
+                            <img src="../images/scorpion-assembly.gif" alt="Right View (Stinger Extended)">
+                            <div class="carousel-caption">Right View (Stinger Extended)</div>
                         </div>
                     </div>
                     <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
@@ -83,41 +85,170 @@
 
                 <!-- Starting Out Simple -->
                 <div class="project-text">
-                    <h2>Starting out simple</h2>
-                    <h4>MiniMe</h4>
-                    <p>Five concepts to transport plastic balls, followed by a decision matrix to evaluate the options and select the best. I translated a cardboard prototype to a manufacturable design from bolted sheet metal and aluminum L-brackets.</p>
-                    <p>With the addition of the front claw, the <em>MiniMe</em> encountered issues climbing the 25-degree incline, which was necessary for later challenges. I evaluated how battery placement affects the center of mass and how the coefficient of friction and normal force impact wheel traction to ensure <strong>no-slip conditions</strong> while climbing the ramp.</p>
+                    <h1>Starting out simple</h1>
+                    <p>Before designing a robot to approach the main task, I built a <strong>testing platform</strong> to familiarize myself with the scale of the board, the machine shop, and the available components.</p>
+                </div>
+                
+                <div class="project-grid">
+                    <div class="project-text">
+                        <h4>Kit Components</h4>
+                        <p>Five concepts to transport plastic balls, followed by a decision matrix to evaluate the options and select the best.</p>
+                        <h4>iDeation and refinement</h4>
+                        <p>Translated cardboard prototype to a manufacturable design from bolted sheet metal and aluminum L-brackets.</p>
+                    </div>
+                    <div class="project-media">
+                         <img src="../images/scorpion-detail-1.jpg" alt="Prototype">
+                    </div>
                 </div>
 
-                <!-- MCM Section -->
-                 <div class="project-grid reverse">
-                    <div class="project-media">
-                        <img src="../images/scorpion-claw.gif" alt="MCM Claw Mechanism">
+                <div class="project-text">
+                    <p>1. Approximation of the coefficient of static friction of rubber wheels on the <em>MiniMe</em>.</p>
+                    <p>3. Calculation of the x-coordinate of the current CM using three scales to measure the normal force on each wheel.</p>
+                    <p>5. Since the (x,y) position of the CM was outside of the purple region, I moved the battery, the heaviest component, lower. This reduced the y-position of the CM and the effect of theta on its displacement.</p>
+                    <p><em>To prototype, I placed the battery behind the claw and made a hot glue and cardboard hinge to improve ground clearance.</em></p>
+                    <p><em>I then designed a metal model with steel hinges, lowering the CM and moving the claw to avoid colliding with the ramp.</em></p>
+                </div>
+
+                <!-- Vat of Acid -->
+                <div class="project-text">
+                     <h4>Vat of acid Challenge</h4>
+                     <p>After choosing the Static Claw, I developed five unique designs and another decision matrix to choose a final idea.</p>
+                     <p>Simple CAD to reference while machining brackets and bending sheet metal.</p>
+                     <p>A cardboard mock-up was created to test the claw and refine the finger angle.</p>
+                     <p>Finally, integrated claw design with <em>MiniMe</em>, holding a ball!</p>
+                     <p><em>MiniMe</em> effortlessly transporting balls out of the vat of acid — success!</p>
+                </div>
+
+                <!-- Reaching New Heights -->
+                <div class="project-grid reverse">
+                     <div class="project-media">
+                        <img src="../images/scorpion.jpg" alt="MiniMe">
                     </div>
                     <div class="project-text">
-                        <h2>Most Critical Module (MCM)</h2>
-                        <h4>The Claw</h4>
-                        <p><strong>Design a robot to interact with the <em>Gooble Box</em>, a 2x2 button panel on a 25° incline.</strong> The robot must start from a colored zone above or below the ramp, press buttons in an alternating sequence, apply specific forces, and maximize points in 90 seconds.</p>
-                        <p>I designed a unique 4-bar linkage claw mechanism optimized for picking up scoring objects with high precision and speed. To push the buttons, I developed a <strong>camshaft design</strong> that converts the rotational motion of a motor into the linear motion of shafts. The rotationally offset cams ensure the buttons are pressed at a constant frequency.</p>
+                        <h4>Reaching new heights</h4>
+                        <p>With the addition of the front claw, the <em>MiniMe</em> encountered issues climbing the 25-degree incline, which was necessary for later challenges. I evaluated how battery placement affects the center of mass and how the coefficient of friction and normal force impact wheel traction to ensure <strong>no-slip conditions</strong> while climbing the ramp.</p>
+                        <p>2. Free Body Diagram and associated equations for all (x, y) positions of the CM to avoid tipping, shown in purple region.</p>
+                        <p>4. Determined CM's y-position using calculated lower x-bound and upper y-bound, and measured x-coordinate.</p>
+                        <p>6. Due to the new CM location directly behind the front axle, the <em>MiniMe</em> successfully climbed the ramp without tipping or slipping!</p>
+                        <p><strong><em>… now for the fun part!</em></strong></p>
                     </div>
                 </div>
 
-                <!-- Chassis Section -->
+                <!-- Problem Statement -->
+                <div class="section--grey" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <h2>Problem Statement</h2>
+                    <p><strong>Design a robot to interact with the <em>Gooble Box</em>, a 2x2 button panel on a 25° incline.</strong></p>
+                    <p><strong>The robot must…</strong></p>
+                    <ul>
+                        <li><strong>start from a colored zone above or below the ramp,</strong></li>
+                        <li><strong>press buttons in an alternating sequence (right-left-right-left),</strong></li>
+                        <li><strong>apply 20N to the top buttons and 10N to the bottom buttons,</strong></li>
+                        <li><strong>delay for at least 500ms between presses,</strong></li>
+                        <li><strong>stay within a 12x12x16” bounding box, and</strong></li>
+                        <li><strong>maximize points in 90 seconds (1 point / top button, 0.5 point / bottom button).</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Concept Generation -->
+                <div class="project-text">
+                    <p>concept generation:</p>
+                    <p><em>how many ways can a robot press the buttons?</em></p>
+                    <h4>Decision Matrix</h4>
+                    <p>I used a variety of design requirements to motivate the selection rationale and sketched preliminary designs for the top two options.</p>
+                    <p><strong>(2) Inner-Rod Hammers</strong></p>
+                    <p><strong>(5) “Drive-Over-It” Strategy</strong></p>
+                </div>
+
+                <!-- MCM -->
                 <div class="project-grid">
                     <div class="project-media">
-                        <img src="../images/scorpion-assembly.gif" alt="Chassis Assembly">
+                        <img src="../images/scorpion-claw.gif" alt="Camshaft Design">
                     </div>
                     <div class="project-text">
-                        <h2>Chassis and Drivetrain</h2>
-                        <p><strong>Key Idea:</strong> By making a <strong>narrow wheelbase</strong>, the robot can drive in the space between the buttons. Furthermore, to avoid bottoming out when climbing onto the panel, <strong>continuous contact</strong> with the ground is maintained with tank treads.</p>
-                        <p>This design uses a 24-inch timing belt as the tank treads, alongside rods, LDO motors, bushings, e-clips, washers, and custom acrylic timing gears. Special consideration was given to the minimum number of teeth in contact with the gear to ensure adequate belt tooth shear strength.</p>
+                        <h1>Most Critical Module (MCM)</h1>
+                        <p>To push the buttons, I developed a <strong>camshaft design</strong> that converts the rotational motion of a motor into the linear motion of shafts. The rotationally offset cams ensure the buttons are pressed at a constant frequency.</p>
+                        <h2>MCM Design Overview</h2>
+                        <p><strong>I designed the MCM to be manufactured from simple sheet metal bends, rods, springs, e-clips, washers, and bushings, paying attention to stiffness and reducing misalignment.</strong></p>
                     </div>
                 </div>
 
+                <div class="project-text">
+                     <h4>Manufacturing and Assembly</h4>
+                     <p><strong>Misalignment</strong> Manual machining methods are good for mock-ups, but prototypes require a more precise process.</p>
+                </div>
+
+                <!-- Learning from the past -->
+                <div class="project-grid reverse">
+                    <div class="project-media">
+                         <img src="../images/scorpion-claw-iso.jpg" alt="MCM Detail">
+                    </div>
+                    <div class="project-text">
+                        <h4>Learning from the past</h4>
+                        <p>I analyzed past successful mechanisms to identify key features to include and avoid when designing my MCM.</p>
+                        <p>The motor shaft is constrained to have one degree of freedom: <strong>rotation in y</strong>.</p>
+                        <p>The pin shaft is constrained to have one relevant degree of freedom: <strong>translation in z</strong>.</p>
+                        <p>As the cam turns in +y, it moves the shaft spring in -z by 0.25”, applying force to push the button!</p>
+                        <p><strong>Plasma Cutting</strong> Using this process to cut sheet metal guaranteed much better tolerances than I could produce by hand. This helps to reduce misalignment in shafts and bolted connections, which improves the efficiency of the system.</p>
+                        <p><strong>Bottom with Springs</strong> Assembly was very simple, only requiring steps to bend sheet metal, build the spring subassembly, and bolt the sheet metal structures together.</p>
+                    </div>
+                </div>
+                
                  <div class="project-text">
-                    <h2>Acknowledgements</h2>
-                    <p>I want to give a huge shout-out to my advisor, Professor Warren Seering. Your support was invaluable throughout the semester, and you have made a tremendous difference in my life and my confidence as a mechanical engineer. Thank you for inspiring me every step of the way.</p>
+                    <h2>Final MCM Assembly</h2>
+                 </div>
+
+                <!-- Chassis -->
+                <div class="project-grid">
+                    <div class="project-media">
+                        <img src="../images/scorpion-assembly.gif" alt="Chassis">
+                    </div>
+                    <div class="project-text">
+                        <h1>Chassis and Drivetrain</h1>
+                        <p><strong><em>Key Idea:</em></strong> By making a <strong>narrow wheelbase</strong>, the robot can drive in the space between the buttons. Furthermore, to avoid bottoming out when climbing onto the panel, <strong>continuous contact</strong> with the ground is maintained with tank treads.</p>
+                        <h4>Estimating efficiency and Sizing Motor</h4>
+                        <p>LDO motor interfaces with timing gear, which tensions and drives the belt and moves the robot forwards at a constant speed.</p>
+                        <h4>Designing Effective Treads</h4>
+                        <p>This design uses a 24-inch timing belt as the tank treads, alongside rods, LDO motors, bushings, e-clips, washers, and custom acrylic timing gears. Special consideration was given to the minimum number of teeth in contact with the gear to ensure adequate belt tooth shear strength, according to the belt’s datasheet.</p>
+                    </div>
+                </div>
+
+                <div class="project-text">
+                    <p>I evaluated the effect of bushings, timing gear, and gearbox on the motor's power output. I used this efficiency rating to calculate the maximum torque, assuming a liberal final weight of nine pounds. Based on these calculations, I selected the <strong>LDO 98</strong> motor because the expected torque was the closest to peak power output from the provided gearbox configurations (see torque-speed graphs on right).</p>
+                    <h3>DESIGN</h3>
+                    <p>All chassis components were made with the plasma cutter, employing the same design philosophy as the MCM.</p>
+                    <p>Applying ample force to front face of treads to test motor torque and climbing ability.</p>
+                    <p>The robot can hold two MCM modules, one per row of buttons, while sitting in the empty tracks beside them.</p>
+                    <p>A bending machine and stopper were used to consistently bend sheet metal to 90-degree angles for optimal alignment.</p>
+                    <p>Remote controlling robot to climb on a surface with sharp edges and to ensure the belt teeth appropriately grip the edge and verify the robot does not tip or slip.</p>
+                    <p>Shows the robot in the initial and final stages before and after climbing onto the button panel, emphasizing continuous contact.</p>
+                    <h3>Manufacturing</h3>
+                    <p>Shows the hole pattern and all parts of the aluminum chassis riveted together before adding the treads and MCMs.</p>
+                    <h3>Testing</h3>
+                    <p><em>around the world, around the world, around the world, around the world, around the world</em></p>
+                    <h3>The Finishing touches</h3>
+                    <p>I designed a simple large <strong>hook</strong> to guarantee the robot was correctly positioned over the buttons every game. This mechanism, affectionately called the stinger, gripped onto the back of the button panel as an alignment feature.</p>
+                </div>
+
+                <!-- Watch Action -->
+                <div class="section--grey" style="padding: 2rem; text-align: center; margin-top: 2rem;">
+                    <h1>Watch Scorpion In action</h1>
+                    <p><strong>Gooble Box Demonstration</strong></p>
+                    <p><em>Note: Yellow plastic pieces are threaded features to fine-tune each shaft’s height</em></p>
+                    <p><strong>Post-Competition Interview</strong></p>
+                    <p><em>Watch me explain how the robot operates at a live demo during the 2024 2.007 Competition!</em></p>
+                </div>
+
+                <!-- Acknowledgements -->
+                 <div class="project-text">
+                    <h1>Acknowledgements</h1>
+                    <h3>Professor Seering</h3>
+                    <p>I want to give a huge shout-out to my advisor, Professor Warren Seering. Your support was invaluable throughout the semester, and you have made a tremendous difference in my life and my confidence as a mechanical engineer. Thank you for inspiring me every step of the way and always being there to talk to. You are amazing.</p>
+                    <h3>Pappalardo Shop staff</h3>
                     <p>Thank you to all of the wonderful machine shop staff who worked all hours of the day, especially towards competition season. I want to personally thank Scott for his amazing tips and horrible puns that carried me throughout the semester.</p>
+                    <h3>Course Reflections</h3>
+                    <p>In retrospect, I now understand how long assembly and manufacturing take, so my ambitious plans for developing a new MCM every week seem impractical. Perfection is the enemy of progress; I should have experimented more frequently by designing and manufacturing many physical prototypes. I discarded many ideas early on due to a poor understanding and preconceived notions about how components functioned. I have learned to be more experimental and more realistic when planning tasks. I could also have developed a better strategy to gain more points, possibly by experimenting with other modules rather than doing a depth-first search of the gooble boxes.</p>
+                    <h3>Design Notebook</h3>
+                    <p>Check it out <a href="#" style="color: var(--color-orange); font-weight: bold;">here</a>!</p>
                 </div>
 
             </div>
