@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thomas Larsen Portfolio - Mechanical Engineering Projects at MIT">
+    <title>Portfolio — Thomas Larsen</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="#page" class="sr-only">Skip to Content</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Thomas Larsen Logo">
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/thlarsen/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="page">
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('images/portfolio-hero.jpg');">
+            <div class="hero-content">
+                <h1 class="hero-title">Portfolio</h1>
+            </div>
+        </section>
+
+        <!-- Wavy Divider -->
+        <div class="divider-wavy">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" fill="#ffffff">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <section class="section">
+            <div class="portfolio-grid">
+                <!-- Project 1: Scorpion -->
+                <a href="portfolio/scorpion.html" class="portfolio-item">
+                    <img src="images/scorpion.jpg" alt="Scorpion 2.007 Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">Scorpion (2.007)</h3>
+                    </div>
+                </a>
+
+                <!-- Project 2: Biomech Actuator -->
+                <a href="portfolio/actuator.html" class="portfolio-item">
+                    <img src="images/actuator.png" alt="Biomech Actuator Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">Biomech Actuator</h3>
+                    </div>
+                </a>
+
+                <!-- Project 3: Product Design (2.00b) -->
+                <a href="portfolio/toylab.html" class="portfolio-item">
+                    <img src="images/toylab.jpg" alt="Product Design 2.00b Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">Product Design (2.00b)</h3>
+                    </div>
+                </a>
+
+                <!-- Project 4: microCloud Chamber -->
+                <a href="portfolio/microcloud.html" class="portfolio-item">
+                    <img src="images/microcloud.jpg" alt="microCloud Chamber Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">microCloud Chamber</h3>
+                    </div>
+                </a>
+
+                <!-- Project 5: FIRST/CIM (BTHS) -->
+                <a href="portfolio/cim.html" class="portfolio-item">
+                    <img src="images/cim.jpg" alt="FIRST/CIM BTHS Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">FIRST/CIM (BTHS)</h3>
+                    </div>
+                </a>
+
+                <!-- Project 6: Hot Plate (Formlabs) -->
+                <a href="portfolio/hot-plate-jig.html" class="portfolio-item">
+                    <img src="images/hotplate.png" alt="Hot Plate Formlabs Project">
+                    <div class="portfolio-item-overlay">
+                        <h3 class="portfolio-item-title">Hot Plate (Formlabs)</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Thomas Larsen, 2024</p>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

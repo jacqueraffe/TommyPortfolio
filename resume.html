@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Thomas Larsen - Mechanical Engineer at MIT with a passion for precision machine design and bio-inspired robotics">
+    <title>Resume — Thomas Larsen</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="#page" class="sr-only">Skip to Content</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html" class="active">Resume</a>
+        </nav>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Thomas Larsen Logo">
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/thlarsen/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="page">
+        <!-- Hero Section with solid grey background like original -->
+        <section class="hero hero--grey" style="background-color: #c3c3c3;">
+            <div class="hero-content">
+                <h1 class="hero-title">Who I Am</h1>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="section">
+            <div class="about-content">
+                <p>
+                    Hey! My name is Thomas Larsen and I am a Mechanical Engineer (Course 2) at MIT, with a minor in
+                    Computer Science (Course 6). I have a passion for precision machine design and bio-inspired
+                    robotics. Thanks for coming to check out my portfolio!
+                </p>
+                <p>
+                    I play Alto Saxophone and love jazz-fusion & indie-rock. I am also a co-founder of MIT LIVE, a
+                    dynamic music group on campus. We create bands of students with common song interests and put on
+                    showcases every semester.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Thomas Larsen, 2024</p>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

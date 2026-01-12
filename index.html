@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Thomas Larsen - Mechanical Engineering Portfolio. MIT Course 2 with a minor in Computer Science.">
+  <title>Thomas Larsen</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <a href="#page" class="sr-only">Skip to Content</a>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+
+    <div class="logo">
+      <img src="images/logo.png" alt="Thomas Larsen Logo">
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/thlarsen/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="page">
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/home-hero.jpg');">
+      <div class="hero-content">
+        <h1 class="hero-title">Thomas Larsen</h1>
+        <p class="hero-subtitle">Mechanical Engineering</p>
+      </div>
+    </section>
+
+    <!-- Chevron Divider -->
+    <div class="divider-chevron"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-content">
+        <div class="contact-accent"></div>
+        <h2 class="contact-title">Get in touch.</h2>
+        <p class="contact-text">
+          Thanks for taking the time to visit my web portfolio. If there's anything you'd like to know about any of the
+          projects showcased here or if you're interested in collaborating, please shoot me an email!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">Thomas Larsen, 2024</p>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>
