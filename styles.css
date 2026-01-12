@@ -862,3 +862,17 @@ textarea.form-input {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.missing-asset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border: 2px dashed #ccc;
+  color: #777;
+  padding: 2rem;
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+  font-family: monospace;
+  min-height: 200px;
+}
