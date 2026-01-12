@@ -16,7 +16,7 @@
   --color-text: #333333;
   --color-text-light: #666666;
   --color-orange: #ff6600;
-  --color-blue-glow: rgba(100, 150, 255, 0.3);
+
 
   /* Typography */
   --font-heading: 'Six Caps', sans-serif;
@@ -58,27 +58,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Blue glow edge effect */
-body::before,
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100px;
-  pointer-events: none;
-  z-index: 9999;
-}
 
-body::before {
-  left: 0;
-  background: linear-gradient(to right, var(--color-blue-glow), transparent);
-}
-
-body::after {
-  right: 0;
-  background: linear-gradient(to left, var(--color-blue-glow), transparent);
-}
 
 a {
   text-decoration: none;
