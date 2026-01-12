@@ -63,12 +63,12 @@
                             <div class="carousel-caption">Front Isometric</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-detail-1.jpg" alt="Treads: Detail View">
-                            <div class="carousel-caption">Treads: Detail View</div>
+                            <img src="../images/scorpion-detail-1.jpg" alt="Camshaft: Detail View">
+                            <div class="carousel-caption">Camshaft: Detail View</div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/scorpion-detail-2.jpg" alt="Camshaft: Detail View">
-                            <div class="carousel-caption">Camshaft: Detail View</div>
+                            <img src="../images/scorpion-detail-2.jpg" alt="Treads: Detail View">
+                            <div class="carousel-caption">Treads: Detail View</div>
                         </div>
                         <div class="carousel-item">
                             <img src="../images/scorpion-claw.gif" alt="Right View (Stinger Retracted)">
@@ -79,7 +79,7 @@
                             <div class="carousel-caption">Right View (Stinger Extended)</div>
                         </div>
                          <div class="carousel-item">
-                            <div class="missing-asset">Image: Front View</div>
+                            <img src="../images/scorpion.jpg" alt="Front View">
                             <div class="carousel-caption">Front View</div>
                         </div>
                          <div class="carousel-item">
@@ -342,6 +342,7 @@
         let slideIndex = 0;
         const slides = document.querySelectorAll('.carousel-item');
         const inner = document.querySelector('.carousel-inner');
+        const carousel = document.querySelector('.carousel');
         
         function showSlides(n) {
             if (n >= slides.length) { slideIndex = 0 }
@@ -349,6 +350,11 @@
             
             // Slide transition
             inner.style.transform = `translateX(-${slideIndex * 100}%)`;
+            
+            // Optional: Adjust carousel height to current slide to eliminate gap
+            // This is handled by CSS aspect-ratio/fixed height now, but can be dynamic:
+            // const currentSlide = slides[slideIndex];
+            // carousel.style.height = currentSlide.offsetHeight + 'px';
         }
 
         function moveCarousel(n) {
