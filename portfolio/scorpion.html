@@ -339,30 +339,30 @@
         let slideIndex = 0;
         const slides = document.querySelectorAll('.carousel-item');
         const inner = document.querySelector('.carousel-inner');
-        const carousel = document.querySelector('.carousel');
         
-        function showSlides(n) {
-            if (n >= slides.length) { slideIndex = 0 }
-            if (n < 0) { slideIndex = slides.length - 1 }
+        // Match the CSS min-width percentage
+        const slideWidthPercent = 60; 
+
+        function showSlides() {
+            // Check bounds
+            // We want to stop when the last image is fully visible on the right.
+            // But a simple loop is easier for now.
+            if (slideIndex >= slides.length) { slideIndex = 0 }
+            if (slideIndex < 0) { slideIndex = slides.length - 1 }
             
             // Slide transition
-            inner.style.transform = `translateX(-${slideIndex * 100}%)`;
-            
-            // Optional: Adjust carousel height to current slide to eliminate gap
-            // This is handled by CSS aspect-ratio/fixed height now, but can be dynamic:
-            // const currentSlide = slides[slideIndex];
-            // carousel.style.height = currentSlide.offsetHeight + 'px';
+            // Move by slideIndex * slideWidthPercent
+            inner.style.transform = `translateX(-${slideIndex * slideWidthPercent}%)`;
         }
 
         function moveCarousel(n) {
             slideIndex += n;
-            showSlides(slideIndex);
+            showSlides();
         }
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
-             // Ensure first slide is shown correctly (transform 0)
-             showSlides(slideIndex);
+             showSlides();
         });
 
         // Header scroll effect
