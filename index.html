@@ -40,16 +40,16 @@
 
   <!-- Main Content -->
   <main id="page">
-    <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/home-hero.jpg');">
-      <div class="hero-content">
-        <h1 class="hero-title">Thomas Larsen</h1>
-        <p class="hero-subtitle">Mechanical Engineering</p>
-      </div>
-    </section>
-
-    <!-- Chevron Divider -->
-    <div class="divider-chevron"></div>
+    <!-- Hero Section with Border Container -->
+    <div class="hero-wrap">
+      <section class="hero" style="background-image: url('images/home-hero.jpg');">
+        <div class="hero-content">
+          <h1 class="hero-title">Thomas Larsen</h1>
+          <p class="hero-subtitle">Mechanical Engineering</p>
+        </div>
+      </section>
+      <div class="hero-border"></div>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact-section">
@@ -60,6 +60,25 @@
           Thanks for taking the time to visit my web portfolio. If there's anything you'd like to know about any of the
           projects showcased here or if you're interested in collaborating, please shoot me an email!
         </p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-input" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div id="successMessage" class="success-message">
+          <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+        </div>
       </div>
     </section>
   </main>
@@ -79,6 +98,40 @@
         header.classList.remove('scrolled');
       }
     });
+
+    // Contact Form submission
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Simulate form submission visually
+        const btn = contactForm.querySelector('.submit-btn');
+        btn.textContent = 'Preparing mail...';
+        btn.disabled = true;
+
+        // Construct mailto link
+        const subject = encodeURIComponent(`Portfolio Message from ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        const mailtoUrl = `mailto:thlarsen@mit.edu?subject=${subject}&body=${body}`;
+
+        setTimeout(() => {
+          // Open mail client
+          window.location.href = mailtoUrl;
+
+          contactForm.style.display = 'none';
+          successMessage.style.display = 'block';
+
+          console.log('Form Submitted via mailto:', { name, email, message });
+        }, 1000);
+      });
+    }
   </script>
 </body>
 
