@@ -521,9 +521,8 @@
                   <a href="index.html" data-animation-role="header-element">
 
                     <img elementtiming="nbf-header-logo-desktop"
-                      src="assets/images/d239fd988652f8fe1e40825ec97436b5.png"
-                      alt="Thomas Larsen" style="display:block" fetchpriority="high" loading="eager" decoding="async"
-                      data-loader="raw">
+                      src="assets/images/d239fd988652f8fe1e40825ec97436b5.png" alt="Thomas Larsen" style="display:block"
+                      fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                   </a>
                 </div>
@@ -696,9 +695,8 @@
                   <a href="index.html" data-animation-role="header-element">
 
                     <img elementtiming="nbf-header-logo-desktop"
-                      src="assets/images/d239fd988652f8fe1e40825ec97436b5.png"
-                      alt="Thomas Larsen" style="display:block" fetchpriority="high" loading="eager" decoding="async"
-                      data-loader="raw">
+                      src="assets/images/d239fd988652f8fe1e40825ec97436b5.png" alt="Thomas Larsen" style="display:block"
+                      fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
 
                   </a>
                 </div>
@@ -1502,16 +1500,11 @@
 
 
 
-                                <img data-stretch="true"
-                                  
-                                  
-                                  
-                                  data-image-focal-point="0.597699350496909,0.7680960120015001" alt="" 
-                                  elementtiming="system-image-block" data-sqsp-image-block-image
-                                  src="assets/images/436c98f5a41d9d06dc594a1a1bb43e05.JPG"
-                                  width="3840" height="2400" alt="" sizes="100vw"
+                                <img data-stretch="true" data-image-focal-point="0.597699350496909,0.7680960120015001"
+                                  alt="" elementtiming="system-image-block" data-sqsp-image-block-image
+                                  src="assets/images/436c98f5a41d9d06dc594a1a1bb43e05.JPG" width="3840" height="2400"
+                                  alt="" sizes="100vw"
                                   style="display:block;object-fit: cover; object-position: 59.7699350496909% 76.80960120015001%"
-                                  
                                   loading="lazy" decoding="async" data-loader="sqs">
 
 
@@ -2249,6 +2242,36 @@
 
 
     </footer>
+    <script src="assets/js/animations.js"></script>
+    <script>
+      // Make "Email Me" functional
+      document.addEventListener('DOMContentLoaded', function () {
+        // Find the h4 containing "Email Me"
+        const headings = document.querySelectorAll('h4');
+        let emailHeading = null;
+        for (let h of headings) {
+          if (h.textContent.includes('Email Me')) {
+            emailHeading = h;
+            break;
+          }
+        }
+
+        if (emailHeading) {
+          // Check if already wrapped
+          if (emailHeading.parentElement.tagName !== 'A') {
+            const link = document.createElement('a');
+            link.href = "mailto:thomas.h.larsen@gmail.com";
+            link.style.textDecoration = 'none';
+            link.style.color = 'inherit';
+            link.style.cursor = 'pointer';
+
+            // Wrap the heading
+            emailHeading.parentNode.insertBefore(link, emailHeading);
+            link.appendChild(emailHeading);
+          }
+        }
+      });
+    </script>
 
 
   </div>
