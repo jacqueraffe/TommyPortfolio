@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpion (2.007) - Thomas Larsen</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html" class="logo">Thomas Larsen</a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../">Portfolio</a></li>
+                <li><a href="../../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="project-hero">
+            <h2>2.007 Design and Manufacturing I</h2>
+            <h1>SCORPION - Sophomore Capstone</h1>
+        </div>
+
+        <!-- Overview Gallery -->
+        <h3 class="section-header">Scorpion: Overview</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="../../images/Warren.jpg"
+                    alt="Robot Overview">
+                <div class="gallery-caption">Full Assembly</div>
+            </div>
+            <!-- Note: I'm using the main banner for the first slot. 
+                 The original site used specific technical drawings here which were placeholders.
+                 You can replace these src attributes with your own screenshots later. -->
+            <div class="gallery-item"><img src="#" alt="Back Isometric">
+                <div class="gallery-caption">Back Isometric</div>
+            </div>
+            <div class="gallery-item"><img src="#" alt="Front Isometric">
+                <div class="gallery-caption">Front Isometric</div>
+            </div>
+            <div class="gallery-item"><img src="#" alt="Treads Detail">
+                <div class="gallery-caption">Treads: Detail View</div>
+            </div>
+            <div class="gallery-item"><img src="#" alt="Camshaft Detail">
+                <div class="gallery-caption">Camshaft: Detail View</div>
+            </div>
+            <div class="gallery-item"><img src="#" alt="Right View">
+                <div class="gallery-caption">Right View (Stinger Retracted)</div>
+            </div>
+        </div>
+
+        <!-- Starting Out Simple -->
+        <h3 class="section-header">Starting out simple</h3>
+        <p>Before designing a robot to approach the main task, I built a <strong>testing platform</strong> to
+            familiarize myself with the scale of the board, the machine shop, and the available components.</p>
+
+        <div class="two-col">
+            <div>
+                <h4>Kit Components</h4>
+                <img src="../../images/Screenshot+2024-10-01+022544.png"
+                    class="content-image" alt="Kit Components">
+            </div>
+            <div>
+                <h4>Ideation and Refinement</h4>
+                <img src="../../images/Screenshot+2024-10-01+022644.jpg"
+                    class="content-image" alt="Ideation Sketches">
+                <p>Five concepts to transport plastic balls, followed by a decision matrix to evaluate the options and
+                    select the best.</p>
+            </div>
+        </div>
+
+        <img src="../../images/Screenshot+2024-10-01+022737.png"
+            class="content-image" alt="Prototyping">
+        <p>Translated cardboard prototype to a manufacturable design from bolted sheet metal and aluminum L-brackets.
+        </p>
+
+        <img src="../../images/IMG_6636.gif"
+            class="content-image" alt="Testing Animation">
+
+        <!-- Calculations -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="../../images/Screenshot+2024-10-01+032111.png"
+                    alt="Calculation 1">
+                <div class="gallery-caption">1. Approximation of static friction coefficient.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../images/Screenshot+2024-10-01+034528.png"
+                    alt="Calculation 2">
+                <div class="gallery-caption">2. Calculation of Center of Mass (CM).</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../images/Screenshot+2024-10-01+040420.png"
+                    alt="Calculation 3">
+                <div class="gallery-caption">3. Adjusting battery position for stability.</div>
+            </div>
+        </div>
+
+        <!-- Vat of Acid Challenge -->
+        <h3 class="section-header">Vat of Acid Challenge</h3>
+        <p>After choosing the Static Claw, I developed five unique designs and another decision matrix to choose a final
+            idea.</p>
+
+        <div class="two-col">
+            <img src="../../images/Claw+Iso.jpg"
+                class="content-image" alt="Claw CAD">
+            <div>
+                <p>Simple CAD to reference while machining brackets and bending sheet metal.</p>
+                <img src="../../images/IMG_6489.gif"
+                    class="content-image" alt="Machining Gif">
+            </div>
+        </div>
+
+        <img src="../../images/IMG_6506.jpg"
+            class="content-image" alt="Final MiniMe">
+        <p><em>MiniMe</em> effortlessly transporting balls out of the vat of acid — success!</p>
+
+        <!-- Problem Statement -->
+        <div class="problem-statement">
+            <h3>Problem Statement</h3>
+            <p><strong>Design a robot to interact with the <em>Gooble Box</em>, a 2x2 button panel on a 25° incline. The
+                    robot must…</strong></p>
+            <ul>
+                <li>Start from a colored zone above or below the ramp.</li>
+                <li>Press buttons in an alternating sequence (right-left-right-left).</li>
+                <li>Apply 20N to the top buttons and 10N to the bottom buttons.</li>
+                <li>Delay for at least 500ms between presses.</li>
+                <li>Stay within a 12x12x16” bounding box.</li>
+                <li>Maximize points in 90 seconds.</li>
+            </ul>
+        </div>
+
+        <!-- Concept Generation -->
+        <h3 class="section-header">Concept Generation</h3>
+        <p><em>How many ways can a robot press the buttons?</em></p>
+        <img src="../../images/Screenshot+2024-10-01+044413.png"
+            class="content-image" alt="Decision Matrix">
+
+        <div class="two-col">
+            <div>
+                <h4>(2) Inner-Rod Hammers</h4>
+                <img src="../../images/Screenshot+2024-10-01+044757.jpg"
+                    class="content-image" alt="Concept 2">
+            </div>
+            <div>
+                <h4>(5) “Drive-Over-It” Strategy</h4>
+                <img src="../../images/Screenshot+2024-10-01+045218.jpg"
+                    class="content-image" alt="Concept 5">
+            </div>
+        </div>
+
+        <!-- MCM Section -->
+        <h3 class="section-header">Most Critical Module (MCM)</h3>
+        <p>To push the buttons, I developed a <strong>camshaft design</strong> that converts the rotational motion of a
+            motor into the linear motion of shafts. The rotationally offset cams ensure the buttons are pressed at a
+            constant frequency.</p>
+
+        <img src="../../images/IMG_7089.gif"
+            class="content-image" alt="Camshaft Animation">
+
+        <div class="two-col">
+            <div>
+                <img src="../../images/Full+Iso.png"
+                    class="content-image" alt="MCM Iso">
+            </div>
+            <div>
+                <h4>MCM Design Overview</h4>
+                <p>I designed the MCM to be manufactured from simple sheet metal bends, rods, springs, e-clips, washers,
+                    and bushings, paying attention to stiffness and reducing misalignment.</p>
+            </div>
+        </div>
+
+        <h3 class="section-header">Chassis and Drivetrain</h3>
+        <p><strong>Key Idea:</strong> By making a <strong>narrow wheelbase</strong>, the robot can drive in the space
+            between the buttons. Furthermore, to avoid bottoming out when climbing onto the panel, <strong>continuous
+                contact</strong> with the ground is maintained with tank treads.</p>
+
+        <img src="../../images/Screenshot+2024-10-01+071507.png"
+            class="content-image" alt="Chassis CAD">
+
+        <div class="two-col">
+            <div>
+                <img src="../../images/IMG_7870+(1).gif"
+                    class="content-image" alt="Chassis Testing">
+            </div>
+            <div>
+                <h4>Designing Effective Treads</h4>
+                <p>This design uses a 24-inch timing belt as the tank treads, alongside rods, LDO motors, bushings,
+                    e-clips, washers, and custom acrylic timing gears. Special consideration was given to the minimum
+                    number of teeth in contact with the gear to ensure adequate belt tooth shear strength.</p>
+            </div>
+        </div>
+
+        <h3 class="section-header">Testing</h3>
+        <img src="../../images/IMG_7869.gif"
+            class="content-image" alt="Final Testing">
+        <p style="text-align: center; font-style: italic;">around the world, around the world, around the world...</p>
+
+        <!-- Acknowledgements -->
+        <div class="acknowledgements">
+            <h3>Acknowledgements</h3>
+
+            <div class="resume-item">
+                <h4>Professor Seering</h4>
+                <p>I want to give a huge shout-out to my advisor, Professor Warren Seering. Your support was invaluable
+                    throughout the semester, and you have made a tremendous difference in my life and my confidence as a
+                    mechanical engineer.</p>
+            </div>
+
+            <div class="resume-item">
+                <h4>Pappalardo Shop Staff</h4>
+                <p>Thank you to all of the wonderful machine shop staff who worked all hours of the day, especially
+                    towards competition season. I want to personally thank Scott for his amazing tips and horrible puns
+                    that carried me throughout the semester.</p>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="#" class="btn">View Design Notebook (PDF)</a>
+            </div>
+        </div>
+
+        <div style="margin: 60px 0; text-align: center;">
+            <a href="../" class="btn">← Back to Portfolio</a>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Thomas Larsen
+    </footer>
+
+</body>
+
+</html>
