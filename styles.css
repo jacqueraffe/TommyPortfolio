@@ -16,6 +16,10 @@
   --color-text: #333333;
   --color-text-light: #666666;
   --color-orange: #ff6600;
+  --color-orange-light: rgba(255, 102, 0, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-gradient-start: #2c3e50;
+  --color-gradient-end: #000000;
 
 
   /* Typography */
@@ -195,6 +199,7 @@ p {
   align-items: center;
   text-align: center;
   position: relative;
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,12 +380,15 @@ textarea.form-input {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   cursor: pointer;
-  transition: background-color var(--transition-fast);
+  transition: all var(--transition-fast);
   align-self: flex-start;
+  border-radius: 4px;
 }
 
 .submit-btn:hover {
   background-color: var(--color-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
 }
 
 .success-message {
@@ -580,6 +588,16 @@ textarea.form-input {
   font-size: 1.5rem;
 }
 
+.resume-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: var(--color-orange);
+}
+
 .resume-grid {
   display: grid;
   gap: var(--spacing-lg);
@@ -587,8 +605,18 @@ textarea.form-input {
 
 .resume-item {
   position: relative;
-  padding-left: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-white);
   border-left: 2px solid var(--color-light-grey);
+  transition: all var(--transition-normal);
+  border-radius: 0 8px 8px 0;
+}
+
+.resume-item:hover {
+  border-left-color: var(--color-orange);
+  background: var(--color-light-grey);
+  transform: translateX(5px);
+  box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
 .resume-item::before {
@@ -681,9 +709,10 @@ textarea.form-input {
 .skill-tag {
   background: var(--color-light-grey);
   color: var(--color-dark);
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   font-size: 0.85rem;
-  border-radius: 4px;
+  border-radius: 50px;
+  border: 1px solid transparent;
   transition: all var(--transition-fast);
 }
 
