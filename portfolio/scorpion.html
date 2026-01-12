@@ -89,214 +89,228 @@
                 </div>
 
                 <!-- Starting Out Simple -->
-                <div class="project-text">
+                <div class="project-text" style="text-align: center; margin-bottom: 4rem;">
                     <h1>Starting out simple</h1>
                     <p>Before designing a robot to approach the main task, I built a <strong>testing platform</strong> to familiarize myself with the scale of the board, the machine shop, and the available components.</p>
                 </div>
                 
+                <!-- Row 1: Kit Components (Text Left, Image Right) -->
                 <div class="project-grid">
                     <div class="project-text">
                         <h4>Kit Components</h4>
-                        <img src="../images/scorpion-kit-components.png" alt="Kit Components">
-                        <h4>iDeation and refinement</h4>
-                        <img src="../images/scorpion-ideation-1.jpg" alt="Ideation Sketches">
-                        <img src="../images/scorpion-ideation-2.png" alt="Ideation 2">
                         <p>Five concepts to transport plastic balls, followed by a decision matrix to evaluate the options and select the best.</p>
-                        <img src="../images/scorpion-decision-matrix.png" alt="Decision Matrix">
                         <p>Translated cardboard prototype to a manufacturable design from bolted sheet metal and aluminum L-brackets.</p>
+                        <h4>iDeation and refinement</h4>
+                        <img src="../images/scorpion-ideation-1.jpg" alt="Ideation Sketches" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-ideation-2.png" alt="Ideation 2">
                     </div>
                     <div class="project-media">
-                         <img src="../images/scorpion-detail-1.jpg" alt="Prototype">
-                         <img src="../images/scorpion-cardboard-proto.gif" alt="Cardboard Prototype GIF" style="margin-top: 1rem;">
+                         <img src="../images/scorpion-kit-components.png" alt="Kit Components" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-detail-1.jpg" alt="Prototype" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-cardboard-proto.gif" alt="Cardboard Prototype GIF">
                     </div>
                 </div>
 
-                <div class="project-text">
-                    <p>1. Approximation of the coefficient of static friction of rubber wheels on the <em>MiniMe</em>.</p>
-                    <img src="../images/scorpion-friction-calc.png" alt="Friction Calculation">
-                    <p>3. Calculation of the x-coordinate of the current CM using three scales to measure the normal force on each wheel.</p>
-                    <img src="../images/scorpion-cm-calc.png" alt="CM Calculation">
-                    <p>5. Since the (x,y) position of the CM was outside of the purple region, I moved the battery, the heaviest component, lower. This reduced the y-position of the CM and the effect of theta on its displacement.</p>
-                    <img src="../images/scorpion-cm-adjustment.png" alt="CM Adjustment Diagram">
-                    <p><em>To prototype, I placed the battery behind the claw and made a hot glue and cardboard hinge to improve ground clearance.</em></p>
-                    <img src="../images/scorpion-cardboard-hinge.png" alt="Cardboard Hinge Prototype">
-                    <p><em>I then designed a metal model with steel hinges, lowering the CM and moving the claw to avoid colliding with the ramp.</em></p>
+                <!-- Row 2: Physics Calculations (Image Left, Text Right) -->
+                <div class="project-grid reverse">
+                    <div class="project-media">
+                        <img src="../images/scorpion-friction-calc.png" alt="Friction Calculation" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-cm-calc.png" alt="CM Calculation">
+                    </div>
+                    <div class="project-text">
+                        <p>1. Approximation of the coefficient of static friction of rubber wheels on the <em>MiniMe</em>.</p>
+                        <p>3. Calculation of the x-coordinate of the current CM using three scales to measure the normal force on each wheel.</p>
+                        <p>5. Since the (x,y) position of the CM was outside of the purple region, I moved the battery, the heaviest component, lower. This reduced the y-position of the CM and the effect of theta on its displacement.</p>
+                        <img src="../images/scorpion-cm-adjustment.png" alt="CM Adjustment Diagram" style="margin-top: 1rem;">
+                    </div>
                 </div>
 
-                <!-- Vat of Acid -->
-                <div class="project-text">
-                     <h4>Vat of acid Challenge</h4>
-                     <img src="../images/scorpion-vat-acid-1.png" alt="Vat of Acid 1">
-                     <img src="../images/scorpion-vat-acid-2.png" alt="Vat of Acid 2">
-                     <p>After choosing the Static Claw, I developed five unique designs and another decision matrix to choose a final idea.</p>
-                     <img src="../images/scorpion-claw-iso.jpg" alt="Claw Iso">
-                     <p>Simple CAD to reference while machining brackets and bending sheet metal.</p>
-                     <img src="../images/scorpion-claw.gif" alt="Claw Animation">
-                     <p>A cardboard mock-up was created to test the claw and refine the finger angle.</p>
-                     <img src="../images/scorpion-detail-1.jpg" alt="Claw Mockup">
-                     <p>Finally, integrated claw design with <em>MiniMe</em>, holding a ball!</p>
-                     <p><em>MiniMe</em> effortlessly transporting balls out of the vat of acid — success!</p>
+                <!-- Row 3: Vat of Acid (Text Left, Image Right) -->
+                <div class="project-grid">
+                    <div class="project-text">
+                         <h4>Vat of acid Challenge</h4>
+                         <p>After choosing the Static Claw, I developed five unique designs and another decision matrix to choose a final idea.</p>
+                         <p>Simple CAD to reference while machining brackets and bending sheet metal.</p>
+                         <p>A cardboard mock-up was created to test the claw and refine the finger angle.</p>
+                         <p>Finally, integrated claw design with <em>MiniMe</em>, holding a ball!</p>
+                         <p><em>MiniMe</em> effortlessly transporting balls out of the vat of acid — success!</p>
+                         <img src="../images/scorpion-vat-acid-1.png" alt="Vat of Acid 1" style="margin-top: 1rem;">
+                    </div>
+                    <div class="project-media">
+                         <img src="../images/scorpion-claw-iso.jpg" alt="Claw Iso" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-claw.gif" alt="Claw Animation" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-detail-1.jpg" alt="Claw Mockup">
+                    </div>
                 </div>
 
-                <!-- Reaching New Heights -->
+                <!-- Row 4: Reaching New Heights (Image Left, Text Right) -->
                 <div class="project-grid reverse">
                      <div class="project-media">
-                        <img src="../images/scorpion.jpg" alt="MiniMe">
+                        <img src="../images/scorpion-free-body.png" alt="Free Body Diagram" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-cm-graph.png" alt="CM Graph">
                     </div>
                     <div class="project-text">
                         <h4>Reaching new heights</h4>
                         <p>With the addition of the front claw, the <em>MiniMe</em> encountered issues climbing the 25-degree incline, which was necessary for later challenges. I evaluated how battery placement affects the center of mass and how the coefficient of friction and normal force impact wheel traction to ensure <strong>no-slip conditions</strong> while climbing the ramp.</p>
                         <p>2. Free Body Diagram and associated equations for all (x, y) positions of the CM to avoid tipping, shown in purple region.</p>
-                        <img src="../images/scorpion-free-body.png" alt="Free Body Diagram">
                         <p>4. Determined CM's y-position using calculated lower x-bound and upper y-bound, and measured x-coordinate.</p>
-                        <img src="../images/scorpion-cm-graph.png" alt="CM Graph">
                         <p>6. Due to the new CM location directly behind the front axle, the <em>MiniMe</em> successfully climbed the ramp without tipping or slipping!</p>
-                        <img src="../images/scorpion-successful-climb.png" alt="Successful Climb">
-                        <p><strong><em>… now for the fun part!</em></strong></p>
-                        <img src="../images/scorpion-fun-part.jpg" alt="Fun Part">
+                        <img src="../images/scorpion-successful-climb.png" alt="Successful Climb" style="margin-top: 1rem;">
                     </div>
                 </div>
 
                 <!-- Problem Statement -->
-                <div class="section--grey" style="padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                <div class="section--grey" style="padding: 4rem 2rem; border-radius: 8px; margin-bottom: 4rem; text-align: center;">
                     <h2>Problem Statement</h2>
-                    <p><strong>Design a robot to interact with the <em>Gooble Box</em>, a 2x2 button panel on a 25° incline.</strong></p>
-                    <p><strong>The robot must…</strong></p>
-                    <ul>
-                        <li><strong>start from a colored zone above or below the ramp,</strong></li>
-                        <li><strong>press buttons in an alternating sequence (right-left-right-left),</strong></li>
-                        <li><strong>apply 20N to the top buttons and 10N to the bottom buttons,</strong></li>
-                        <li><strong>delay for at least 500ms between presses,</strong></li>
-                        <li><strong>stay within a 12x12x16” bounding box, and</strong></li>
-                        <li><strong>maximize points in 90 seconds (1 point / top button, 0.5 point / bottom button).</strong></li>
-                    </ul>
+                    <p style="font-size: 1.2rem;"><strong>Design a robot to interact with the <em>Gooble Box</em>, a 2x2 button panel on a 25° incline.</strong></p>
+                    <div style="max-width: 800px; margin: 2rem auto; text-align: left;">
+                        <p><strong>The robot must…</strong></p>
+                        <ul style="padding-left: 1.5rem;">
+                            <li><strong>start from a colored zone above or below the ramp,</strong></li>
+                            <li><strong>press buttons in an alternating sequence (right-left-right-left),</strong></li>
+                            <li><strong>apply 20N to the top buttons and 10N to the bottom buttons,</strong></li>
+                            <li><strong>delay for at least 500ms between presses,</strong></li>
+                            <li><strong>stay within a 12x12x16” bounding box, and</strong></li>
+                            <li><strong>maximize points in 90 seconds (1 point / top button, 0.5 point / bottom button).</strong></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Concept Generation -->
-                <div class="project-text">
+                <!-- Concept Generation Grid -->
+                <div class="project-text" style="text-align: center; margin-bottom: 2rem;">
                     <p>concept generation:</p>
                     <p><em>how many ways can a robot press the buttons?</em></p>
-                    <div class="project-grid-media">
-                         <img src="../images/scorpion-sketch-1.jpg" alt="Sketch 1">
-                         <img src="../images/scorpion-sketch-2.jpg" alt="Sketch 2">
-                         <img src="../images/scorpion-sketch-3.jpg" alt="Sketch 3">
-                         <img src="../images/scorpion-sketch-4.jpg" alt="Sketch 4">
-                         <img src="../images/scorpion-sketch-5.jpg" alt="Sketch 5">
-                         <img src="../images/scorpion-sketch-6.jpg" alt="Sketch 6">
-                         <img src="../images/scorpion-sketch-7.jpg" alt="Sketch 7">
-                         <img src="../images/scorpion-sketch-8.jpg" alt="Sketch 8">
-                    </div>
-                    <h4>Decision Matrix</h4>
-                    <p>I used a variety of design requirements to motivate the selection rationale and sketched preliminary designs for the top two options.</p>
-                    <img src="../images/scorpion-decision-matrix.png" alt="Decision Matrix">
-                    
-                    <p><strong>(2) Inner-Rod Hammers</strong></p>
-                    <img src="../images/scorpion-inner-rod-1.jpg" alt="Inner Rod 1">
-                    <img src="../images/scorpion-inner-rod-2.jpg" alt="Inner Rod 2">
-
-                    <p><strong>(5) “Drive-Over-It” Strategy</strong></p>
-                    <img src="../images/scorpion-drive-over-1.jpg" alt="Drive Over 1">
-                    <img src="../images/scorpion-drive-over-2.jpg" alt="Drive Over 2">
+                </div>
+                <div class="project-grid-media" style="margin-bottom: 4rem;">
+                     <img src="../images/scorpion-sketch-1.jpg" alt="Sketch 1">
+                     <img src="../images/scorpion-sketch-2.jpg" alt="Sketch 2">
+                     <img src="../images/scorpion-sketch-3.jpg" alt="Sketch 3">
+                     <img src="../images/scorpion-sketch-4.jpg" alt="Sketch 4">
+                     <img src="../images/scorpion-sketch-5.jpg" alt="Sketch 5">
+                     <img src="../images/scorpion-sketch-6.jpg" alt="Sketch 6">
+                     <img src="../images/scorpion-sketch-7.jpg" alt="Sketch 7">
+                     <img src="../images/scorpion-sketch-8.jpg" alt="Sketch 8">
                 </div>
 
-                <!-- MCM -->
+                <!-- Row 5: Decision Matrix (Text Left, Image Right) -->
                 <div class="project-grid">
+                    <div class="project-text">
+                        <h4>Decision Matrix</h4>
+                        <p>I used a variety of design requirements to motivate the selection rationale and sketched preliminary designs for the top two options.</p>
+                        <p><strong>(2) Inner-Rod Hammers</strong></p>
+                        <img src="../images/scorpion-inner-rod-1.jpg" alt="Inner Rod 1" style="margin-bottom: 0.5rem;">
+                        <img src="../images/scorpion-inner-rod-2.jpg" alt="Inner Rod 2" style="margin-bottom: 1rem;">
+
+                        <p><strong>(5) “Drive-Over-It” Strategy</strong></p>
+                        <img src="../images/scorpion-drive-over-1.jpg" alt="Drive Over 1" style="margin-bottom: 0.5rem;">
+                        <img src="../images/scorpion-drive-over-2.jpg" alt="Drive Over 2">
+                    </div>
                     <div class="project-media">
-                        <img src="../images/scorpion-claw.gif" alt="Camshaft Design">
+                        <img src="../images/scorpion-decision-matrix.png" alt="Decision Matrix">
+                    </div>
+                </div>
+
+                <!-- Row 6: MCM (Image Left, Text Right) -->
+                <div class="project-grid reverse">
+                    <div class="project-media">
+                        <img src="../images/scorpion-claw.gif" alt="Camshaft Design" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-camshaft-gif.gif" alt="Camshaft GIF">
                     </div>
                     <div class="project-text">
                         <h1>Most Critical Module (MCM)</h1>
                         <p>To push the buttons, I developed a <strong>camshaft design</strong> that converts the rotational motion of a motor into the linear motion of shafts. The rotationally offset cams ensure the buttons are pressed at a constant frequency.</p>
-                        <img src="../images/scorpion-camshaft-gif.gif" alt="Camshaft GIF">
                         <h2>MCM Design Overview</h2>
-                        <img src="../images/scorpion-mcm-iso.png" alt="MCM Iso">
                         <p><strong>I designed the MCM to be manufactured from simple sheet metal bends, rods, springs, e-clips, washers, and bushings, paying attention to stiffness and reducing misalignment.</strong></p>
+                        <img src="../images/scorpion-mcm-iso.png" alt="MCM Iso" style="margin-top: 1rem;">
                     </div>
                 </div>
 
-                <div class="project-text">
-                     <h4>Manufacturing and Assembly</h4>
-                     <img src="../images/scorpion-manufacturing.jpg" alt="Manufacturing">
-                     <p><strong>Misalignment</strong> Manual machining methods are good for mock-ups, but prototypes require a more precise process.</p>
-                     <img src="../images/scorpion-misalignment.jpg" alt="Misalignment">
+                <!-- Row 7: Manufacturing (Text Left, Image Right) -->
+                <div class="project-grid">
+                    <div class="project-text">
+                         <h4>Manufacturing and Assembly</h4>
+                         <p><strong>Misalignment</strong> Manual machining methods are good for mock-ups, but prototypes require a more precise process.</p>
+                         <p><strong>Plasma Cutting</strong> Using this process to cut sheet metal guaranteed much better tolerances than I could produce by hand. This helps to reduce misalignment in shafts and bolted connections, which improves the efficiency of the system.</p>
+                         <p><strong>Bottom with Springs</strong> Assembly was very simple, only requiring steps to bend sheet metal, build the spring subassembly, and bolt the sheet metal structures together.</p>
+                    </div>
+                    <div class="project-media">
+                         <img src="../images/scorpion-manufacturing.jpg" alt="Manufacturing" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-misalignment.jpg" alt="Misalignment" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-plasma-cutting.jpg" alt="Plasma Cutting">
+                    </div>
                 </div>
 
-                <!-- Learning from the past -->
+                <!-- Row 8: Learning from Past (Image Left, Text Right) -->
                 <div class="project-grid reverse">
                     <div class="project-media">
-                         <img src="../images/scorpion-claw-iso.jpg" alt="MCM Detail">
+                         <img src="../images/scorpion-past-mech.png" alt="Past Mechanism" style="margin-bottom: 1rem;">
+                         <img src="../images/scorpion-dof-diagram.jpg" alt="DOF Diagram">
                     </div>
                     <div class="project-text">
                         <h4>Learning from the past</h4>
                         <p>I analyzed past successful mechanisms to identify key features to include and avoid when designing my MCM.</p>
-                        <img src="../images/scorpion-past-mech.png" alt="Past Mechanism">
                         <p>The motor shaft is constrained to have one degree of freedom: <strong>rotation in y</strong>.</p>
                         <p>The pin shaft is constrained to have one relevant degree of freedom: <strong>translation in z</strong>.</p>
                         <p>As the cam turns in +y, it moves the shaft spring in -z by 0.25”, applying force to push the button!</p>
-                        <img src="../images/scorpion-dof-diagram.jpg" alt="DOF Diagram">
-                        <p><strong>Plasma Cutting</strong> Using this process to cut sheet metal guaranteed much better tolerances than I could produce by hand. This helps to reduce misalignment in shafts and bolted connections, which improves the efficiency of the system.</p>
-                        <img src="../images/scorpion-plasma-cutting.jpg" alt="Plasma Cutting">
-                        <p><strong>Bottom with Springs</strong> Assembly was very simple, only requiring steps to bend sheet metal, build the spring subassembly, and bolt the sheet metal structures together.</p>
                     </div>
                 </div>
                 
-                 <div class="project-text">
+                 <div class="project-text" style="text-align: center; margin: 4rem 0;">
                     <h2>Final MCM Assembly</h2>
-                    <img src="../images/scorpion-final-mcm-drawing.png" alt="Final MCM Assembly Drawing">
-                    <img src="../images/scorpion-final-mcm-photo.jpg" alt="Final MCM Assembly Photo">
+                    <div class="project-grid-media" style="grid-template-columns: 1fr 1fr;">
+                        <img src="../images/scorpion-final-mcm-drawing.png" alt="Final MCM Assembly Drawing">
+                        <img src="../images/scorpion-final-mcm-photo.jpg" alt="Final MCM Assembly Photo">
+                    </div>
                  </div>
 
-                <!-- Chassis -->
+                <!-- Row 9: Chassis (Text Left, Image Right) -->
                 <div class="project-grid">
-                    <div class="project-media">
-                        <img src="../images/scorpion-assembly.gif" alt="Chassis">
-                    </div>
                     <div class="project-text">
                         <h1>Chassis and Drivetrain</h1>
                         <p><strong><em>Key Idea:</em></strong> By making a <strong>narrow wheelbase</strong>, the robot can drive in the space between the buttons. Furthermore, to avoid bottoming out when climbing onto the panel, <strong>continuous contact</strong> with the ground is maintained with tank treads.</p>
-                         <div class="project-grid-media">
-                            <img src="../images/scorpion-chassis-detail-1.png" alt="Chassis Detail 1">
-                            <img src="../images/scorpion-chassis-detail-2.png" alt="Chassis Detail 2">
-                            <img src="../images/scorpion-chassis-detail-3.png" alt="Chassis Detail 3">
-                            <img src="../images/scorpion-chassis-detail-4.jpg" alt="Chassis Detail 4">
-                            <img src="../images/scorpion-chassis-detail-5.jpg" alt="Chassis Detail 5">
-                            <img src="../images/scorpion-chassis-detail-6.gif" alt="Chassis Detail 6">
-                        </div>
-
                         <h4>Estimating efficiency and Sizing Motor</h4>
                         <p>LDO motor interfaces with timing gear, which tensions and drives the belt and moves the robot forwards at a constant speed.</p>
                         <h4>Designing Effective Treads</h4>
                         <p>This design uses a 24-inch timing belt as the tank treads, alongside rods, LDO motors, bushings, e-clips, washers, and custom acrylic timing gears. Special consideration was given to the minimum number of teeth in contact with the gear to ensure adequate belt tooth shear strength, according to the belt’s datasheet.</p>
-                         <img src="../images/scorpion-treads-design.jpg" alt="Treads Design">
+                    </div>
+                    <div class="project-media">
+                        <img src="../images/scorpion-assembly.gif" alt="Chassis" style="margin-bottom: 1rem;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <img src="../images/scorpion-chassis-detail-1.png" alt="Detail 1">
+                            <img src="../images/scorpion-chassis-detail-2.png" alt="Detail 2">
+                            <img src="../images/scorpion-chassis-detail-3.png" alt="Detail 3">
+                            <img src="../images/scorpion-chassis-detail-4.jpg" alt="Detail 4">
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-text">
-                    <p>I evaluated the effect of bushings, timing gear, and gearbox on the motor's power output. I used this efficiency rating to calculate the maximum torque, assuming a liberal final weight of nine pounds. Based on these calculations, I selected the <strong>LDO 98</strong> motor because the expected torque was the closest to peak power output from the provided gearbox configurations (see torque-speed graphs on right).</p>
-                    <h3>DESIGN</h3>
-                    <img src="../images/scorpion-design-overview.jpg" alt="Design Overview">
-                    <p>All chassis components were made with the plasma cutter, employing the same design philosophy as the MCM.</p>
-                    <img src="../images/scorpion-plasma-cut-parts.gif" alt="Plasma Cut Parts">
-                    <p>Applying ample force to front face of treads to test motor torque and climbing ability.</p>
-                    <img src="../images/scorpion-torque-test-1.png" alt="Torque Test 1">
-                    <img src="../images/scorpion-torque-test-2.jpg" alt="Torque Test 2">
-                    <p>The robot can hold two MCM modules, one per row of buttons, while sitting in the empty tracks beside them.</p>
-                    <img src="../images/scorpion-robot-mcms.jpg" alt="Robot with MCMs">
-                    <p>A bending machine and stopper were used to consistently bend sheet metal to 90-degree angles for optimal alignment.</p>
-                    <img src="../images/scorpion-bending.gif" alt="Bending Process">
-                    <p>Remote controlling robot to climb on a surface with sharp edges and to ensure the belt teeth appropriately grip the edge and verify the robot does not tip or slip.</p>
-                    <img src="../images/scorpion-edge-climb.gif" alt="Edge Climbing">
-                    <img src="../images/scorpion-grip.jpg" alt="Grip Verification">
-                    <img src="../images/scorpion-slip.jpg" alt="Slip Verification">
-                    <p>Shows the robot in the initial and final stages before and after climbing onto the button panel, emphasizing continuous contact.</p>
-                    <h3>Manufacturing</h3>
-                    <img src="../images/scorpion-chassis-manufacturing.jpg" alt="Chassis Manufacturing">
-                    <p>Shows the hole pattern and all parts of the aluminum chassis riveted together before adding the treads and MCMs.</p>
-                    <h3>Testing</h3>
-                    <img src="../images/scorpion-testing.gif" alt="Testing GIF">
-                    <p><em>around the world, around the world, around the world, around the world, around the world</em></p>
-                    <h3>The Finishing touches</h3>
-                    <p>I designed a simple large <strong>hook</strong> to guarantee the robot was correctly positioned over the buttons every game. This mechanism, affectionately called the stinger, gripped onto the back of the button panel as an alignment feature.</p>
+                <!-- Row 10: Design (Image Left, Text Right) -->
+                <div class="project-grid reverse">
+                    <div class="project-media">
+                        <img src="../images/scorpion-design-overview.jpg" alt="Design Overview" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-plasma-cut-parts.gif" alt="Plasma Cut Parts">
+                    </div>
+                    <div class="project-text">
+                        <h3>DESIGN</h3>
+                        <p>I evaluated the effect of bushings, timing gear, and gearbox on the motor's power output. I used this efficiency rating to calculate the maximum torque, assuming a liberal final weight of nine pounds. Based on these calculations, I selected the <strong>LDO 98</strong> motor because the expected torque was the closest to peak power output from the provided gearbox configurations (see torque-speed graphs on right).</p>
+                        <p>All chassis components were made with the plasma cutter, employing the same design philosophy as the MCM.</p>
+                    </div>
+                </div>
+
+                <!-- Row 11: Testing (Text Left, Image Right) -->
+                <div class="project-grid">
+                    <div class="project-text">
+                        <h3>Testing & Finishing Touches</h3>
+                        <p>Applying ample force to front face of treads to test motor torque and climbing ability.</p>
+                        <p>The robot can hold two MCM modules, one per row of buttons, while sitting in the empty tracks beside them.</p>
+                        <p>Remote controlling robot to climb on a surface with sharp edges and to ensure the belt teeth appropriately grip the edge and verify the robot does not tip or slip.</p>
+                        <p>I designed a simple large <strong>hook</strong> to guarantee the robot was correctly positioned over the buttons every game. This mechanism, affectionately called the stinger, gripped onto the back of the button panel as an alignment feature.</p>
+                    </div>
+                    <div class="project-media">
+                        <img src="../images/scorpion-torque-test-1.png" alt="Torque Test" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-robot-mcms.jpg" alt="Robot with MCMs" style="margin-bottom: 1rem;">
+                        <img src="../images/scorpion-edge-climb.gif" alt="Edge Climbing">
+                    </div>
                 </div>
 
                 <!-- Watch Action -->
